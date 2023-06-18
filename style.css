@@ -1,0 +1,38 @@
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 35pz 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body{
+    background-image: url(banner.png);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+.navbar ul li a{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+  content:''; 
+  height: 2px;
+  width: 0;
+  background: #DEB887;
+  position: absolute; 
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
